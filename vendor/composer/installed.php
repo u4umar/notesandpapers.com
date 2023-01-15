@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '45092acda8d7ee9f03d9663ce891526b169316c1',
+        'reference' => 'e95920c9e160feb178538bd84701f843346d92a4',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -53,6 +53,15 @@
             'install_path' => __DIR__ . '/../doctrine/lexer',
             'aliases' => array(),
             'reference' => 'c268e882d4dbdd85e36e4ad69e02dc284f89d229',
+            'dev_requirement' => false,
+        ),
+        'drupal/admin_toolbar' => array(
+            'pretty_version' => '3.3.0',
+            'version' => '3.3.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/admin_toolbar',
+            'aliases' => array(),
+            'reference' => '3.3.0',
             'dev_requirement' => false,
         ),
         'drupal/core' => array(
@@ -259,7 +268,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '45092acda8d7ee9f03d9663ce891526b169316c1',
+            'reference' => 'e95920c9e160feb178538bd84701f843346d92a4',
             'dev_requirement' => false,
         ),
         'drupal/thex' => array(
