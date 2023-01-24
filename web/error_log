@@ -58,3 +58,52 @@
 #12 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(673): Drupal\Core\DrupalKernel->boot()
 #13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(19): Drupal\Core\DrupalKernel->handle()
 #14 {main}
+[21-Jan-2023 10:34:16 UTC] PDOException: SQLSTATE[HY000] [2002] Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php on line 79 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php(165): PDO->__construct()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Database.php(445): Drupal\mysql\Driver\Database\mysql\Connection::open()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Database.php(188): Drupal\Core\Database\Database::openConnection()
+#3 [internal function]: Drupal\Core\Database\Database::getConnection()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(79): call_user_func_array()
+#5 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(212): Drupal\Component\DependencyInjection\Container->get()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(62): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(534): Drupal\Component\DependencyInjection\Container->get()
+#10 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(905): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(477): Drupal\Core\DrupalKernel->initializeContainer()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(679): Drupal\Core\DrupalKernel->boot()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(19): Drupal\Core\DrupalKernel->handle()
+#14 {main}
+[24-Jan-2023 02:22:31 Asia/Karachi] Uncaught PHP Exception Drupal\Core\Database\DatabaseExceptionWrapper: "SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT 1 AS "expression"
+FROM
+"users_data" "users_data"
+WHERE ("uid" = :db_condition_placeholder_0) AND ("module" = :db_condition_placeholder_1) AND ("name" = :db_condition_placeholder_2); Array
+(
+    [:db_condition_placeholder_0] => 3
+    [:db_condition_placeholder_1] => contact
+    [:db_condition_placeholder_2] => enabled
+)
+" at /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/ExceptionHandler.php line 46
+[24-Jan-2023 02:22:31 Asia/Karachi] Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT "session" FROM "sessions" WHERE "sid" = :sid LIMIT 0, 1; Array
+(
+    [:sid] => gPMH-5Phl5iabk6VE11_ATV2k--9XqNBIOtwsZwfeWE
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionHandler.php on line 63 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Connection.php(795): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php(223): Drupal\Core\Database\Connection->query()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionHandler.php(63): Drupal\mysql\Driver\Database\mysql\Connection->queryRange()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/WriteSafeSessionHandler.php(80): Drupal\Core\Session\SessionHandler->read()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-foundation/Session/Storage/Proxy/SessionHandlerProxy.php(49): Drupal\Core\Session\WriteSafeSessionHandler->read()
+#5 [internal function]: Symfony\Component\HttpFoundation\Session\Storage\Proxy\SessionHandlerProxy->read()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php(172): session_start()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionManager.php(144): Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage->start()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionManager.php(175): Drupal\Core\Session\SessionManager->startNow()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-foundation/Session/Session.php(159): Drupal\Core\Session\SessionManager->save()
+#10 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/Session.php(61): Symfony\Component\HttpFoundation\Session\Session->save()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/KernelPreHandle.php(48): Drupal\Core\StackMiddleware\Session->handle()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/page_cache/src/StackMiddleware/PageCache.php(106): Drupal\Core\StackMiddleware\KernelPreHandle->handle()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/page_cache/src/StackMiddleware/PageCache.php(85): Drupal\page_cache\StackMiddleware\PageCache->pass()
+#14 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/ReverseProxyMiddleware.php(48): Drupal\page_cache\StackMiddleware\PageCache->handle()
+#15 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/NegotiationMiddleware.php(51): Drupal\Core\StackMiddleware\ReverseProxyMiddleware->handle()
+#16 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(51): Drupal\Core\StackMiddleware\NegotiationMiddleware->handle()
+#17 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(681): Drupal\Core\StackMiddleware\StackedHttpKernel->handle()
+#18 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(19): Drupal\Core\DrupalKernel->handle()
+#19 {main}
