@@ -321,3 +321,580 @@ WHERE ("uid" = :db_condition_placeholder_0) AND ("module" = :db_condition_placeh
 #12 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(679): Drupal\Core\DrupalKernel->boot()
 #13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(19): Drupal\Core\DrupalKernel->handle()
 #14 {main}
+[17-May-2023 19:09:33 Asia/Karachi] Uncaught PHP Exception Drupal\Core\Database\DatabaseExceptionWrapper: "SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT 1 AS "expression"
+FROM
+"users_data" "users_data"
+WHERE ("uid" = :db_condition_placeholder_0) AND ("module" = :db_condition_placeholder_1) AND ("name" = :db_condition_placeholder_2); Array
+(
+    [:db_condition_placeholder_0] => 9
+    [:db_condition_placeholder_1] => contact
+    [:db_condition_placeholder_2] => enabled
+)
+" at /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/ExceptionHandler.php line 46
+[17-May-2023 19:09:33 Asia/Karachi] Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT "session" FROM "sessions" WHERE "sid" = :sid LIMIT 0, 1; Array
+(
+    [:sid] => wmnV1r3PmryV6wPDgYZUfsG9QRYslSeuvv5WdfT_i5s
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionHandler.php on line 63 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Connection.php(797): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php(223): Drupal\Core\Database\Connection->query()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionHandler.php(63): Drupal\mysql\Driver\Database\mysql\Connection->queryRange()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/WriteSafeSessionHandler.php(80): Drupal\Core\Session\SessionHandler->read()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-foundation/Session/Storage/Proxy/SessionHandlerProxy.php(49): Drupal\Core\Session\WriteSafeSessionHandler->read()
+#5 [internal function]: Symfony\Component\HttpFoundation\Session\Storage\Proxy\SessionHandlerProxy->read()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php(172): session_start()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionManager.php(144): Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage->start()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionManager.php(175): Drupal\Core\Session\SessionManager->startNow()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-foundation/Session/Session.php(159): Drupal\Core\Session\SessionManager->save()
+#10 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/Session.php(61): Symfony\Component\HttpFoundation\Session\Session->save()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/KernelPreHandle.php(48): Drupal\Core\StackMiddleware\Session->handle()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/page_cache/src/StackMiddleware/PageCache.php(106): Drupal\Core\StackMiddleware\KernelPreHandle->handle()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/page_cache/src/StackMiddleware/PageCache.php(85): Drupal\page_cache\StackMiddleware\PageCache->pass()
+#14 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/ReverseProxyMiddleware.php(48): Drupal\page_cache\StackMiddleware\PageCache->handle()
+#15 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/NegotiationMiddleware.php(51): Drupal\Core\StackMiddleware\ReverseProxyMiddleware->handle()
+#16 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(51): Drupal\Core\StackMiddleware\NegotiationMiddleware->handle()
+#17 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(686): Drupal\Core\StackMiddleware\StackedHttpKernel->handle()
+#18 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(19): Drupal\Core\DrupalKernel->handle()
+#19 {main}
+[26-May-2023 01:13:17 Asia/Karachi] Uncaught PHP Exception Drupal\Core\Database\DatabaseExceptionWrapper: "SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT 1 AS "expression"
+FROM
+"users_data" "users_data"
+WHERE ("uid" = :db_condition_placeholder_0) AND ("module" = :db_condition_placeholder_1) AND ("name" = :db_condition_placeholder_2); Array
+(
+    [:db_condition_placeholder_0] => 10
+    [:db_condition_placeholder_1] => contact
+    [:db_condition_placeholder_2] => enabled
+)
+" at /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/ExceptionHandler.php line 46
+[26-May-2023 01:13:17 Asia/Karachi] Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT "session" FROM "sessions" WHERE "sid" = :sid LIMIT 0, 1; Array
+(
+    [:sid] => KFehgUvyOzJweK6DLoAu_Bld34rNfPXBQhsfcpAVzFo
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionHandler.php on line 63 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Connection.php(797): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php(223): Drupal\Core\Database\Connection->query()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionHandler.php(63): Drupal\mysql\Driver\Database\mysql\Connection->queryRange()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/WriteSafeSessionHandler.php(80): Drupal\Core\Session\SessionHandler->read()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-foundation/Session/Storage/Proxy/SessionHandlerProxy.php(49): Drupal\Core\Session\WriteSafeSessionHandler->read()
+#5 [internal function]: Symfony\Component\HttpFoundation\Session\Storage\Proxy\SessionHandlerProxy->read()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php(172): session_start()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionManager.php(144): Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage->start()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionManager.php(175): Drupal\Core\Session\SessionManager->startNow()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-foundation/Session/Session.php(159): Drupal\Core\Session\SessionManager->save()
+#10 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/Session.php(61): Symfony\Component\HttpFoundation\Session\Session->save()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/KernelPreHandle.php(48): Drupal\Core\StackMiddleware\Session->handle()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/page_cache/src/StackMiddleware/PageCache.php(106): Drupal\Core\StackMiddleware\KernelPreHandle->handle()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/page_cache/src/StackMiddleware/PageCache.php(85): Drupal\page_cache\StackMiddleware\PageCache->pass()
+#14 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/ReverseProxyMiddleware.php(48): Drupal\page_cache\StackMiddleware\PageCache->handle()
+#15 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/NegotiationMiddleware.php(51): Drupal\Core\StackMiddleware\ReverseProxyMiddleware->handle()
+#16 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(51): Drupal\Core\StackMiddleware\NegotiationMiddleware->handle()
+#17 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(686): Drupal\Core\StackMiddleware\StackedHttpKernel->handle()
+#18 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(19): Drupal\Core\DrupalKernel->handle()
+#19 {main}
+[29-May-2023 08:11:15 Asia/Karachi] Uncaught PHP Exception Drupal\Core\Database\DatabaseExceptionWrapper: "SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT 1 AS "expression"
+FROM
+"users_data" "users_data"
+WHERE ("uid" = :db_condition_placeholder_0) AND ("module" = :db_condition_placeholder_1) AND ("name" = :db_condition_placeholder_2); Array
+(
+    [:db_condition_placeholder_0] => 11
+    [:db_condition_placeholder_1] => contact
+    [:db_condition_placeholder_2] => enabled
+)
+" at /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/ExceptionHandler.php line 46
+[29-May-2023 08:11:15 Asia/Karachi] Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT "session" FROM "sessions" WHERE "sid" = :sid LIMIT 0, 1; Array
+(
+    [:sid] => M2g3yVAnAjxi9GLLePWNa4rS0j7ffEULiIZbbf92aN0
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionHandler.php on line 63 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Connection.php(797): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php(223): Drupal\Core\Database\Connection->query()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionHandler.php(63): Drupal\mysql\Driver\Database\mysql\Connection->queryRange()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/WriteSafeSessionHandler.php(80): Drupal\Core\Session\SessionHandler->read()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-foundation/Session/Storage/Proxy/SessionHandlerProxy.php(49): Drupal\Core\Session\WriteSafeSessionHandler->read()
+#5 [internal function]: Symfony\Component\HttpFoundation\Session\Storage\Proxy\SessionHandlerProxy->read()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php(172): session_start()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionManager.php(144): Symfony\Component\HttpFoundation\Session\Storage\NativeSessionStorage->start()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Session/SessionManager.php(175): Drupal\Core\Session\SessionManager->startNow()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-foundation/Session/Session.php(159): Drupal\Core\Session\SessionManager->save()
+#10 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/Session.php(61): Symfony\Component\HttpFoundation\Session\Session->save()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/KernelPreHandle.php(48): Drupal\Core\StackMiddleware\Session->handle()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/page_cache/src/StackMiddleware/PageCache.php(106): Drupal\Core\StackMiddleware\KernelPreHandle->handle()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/page_cache/src/StackMiddleware/PageCache.php(85): Drupal\page_cache\StackMiddleware\PageCache->pass()
+#14 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/ReverseProxyMiddleware.php(48): Drupal\page_cache\StackMiddleware\PageCache->handle()
+#15 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/NegotiationMiddleware.php(51): Drupal\Core\StackMiddleware\ReverseProxyMiddleware->handle()
+#16 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(51): Drupal\Core\StackMiddleware\NegotiationMiddleware->handle()
+#17 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(686): Drupal\Core\StackMiddleware\StackedHttpKernel->handle()
+#18 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(19): Drupal\Core\DrupalKernel->handle()
+#19 {main}
+[12-Jun-2023 04:50:29 Asia/Karachi] Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT 1 AS "expression"
+FROM
+"key_value" "key_value"
+WHERE ("name" = :db_condition_placeholder_0) AND ("collection" = :db_condition_placeholder_1); Array
+(
+    [:db_condition_placeholder_0] => system.cron_last
+    [:db_condition_placeholder_1] => state
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php on line 136 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Connection.php(797): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Select.php(525): Drupal\Core\Database\Connection->query()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Merge.php(378): Drupal\Core\Database\Query\Select->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(136): Drupal\Core\Database\Query\Merge->execute()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(149): Drupal\Core\KeyValueStore\DatabaseStorage->doSet()
+#5 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/State/State.php(84): Drupal\Core\KeyValueStore\DatabaseStorage->set()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(162): Drupal\Core\State\State->set()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(141): Drupal\Core\Cron->setCronLastTime()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/ProxyClass/Cron.php(75): Drupal\Core\Cron->run()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\Core\ProxyClass\Cron->run()
+#10 [internal function]: Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/EventDispatcher/ContainerAwareEventDispatcher.php(111): call_user_func()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-kernel/HttpKernel.php(97): Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher->dispatch()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#14 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(670): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#15 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#16 {main}
+[12-Jun-2023 04:50:29 Asia/Karachi] PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php:95
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php(95): PDOStatement->execute()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(59): Drupal\Core\Database\StatementWrapper->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#4 [internal function]: _drupal_shutdown_function()
+#5 {main}
+
+Next Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: DELETE FROM "semaphore" 
+WHERE "value" = :db_condition_placeholder_0; Array
+(
+    [:db_condition_placeholder_0] => 139290177964865d8572a9a7.14543737
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/ExceptionHandler.php:46
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(63): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#3 [internal function]: _drupal_shutdown_function()
+#4 {main}
+[12-Jun-2023 08:46:34 Asia/Karachi] Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT 1 AS "expression"
+FROM
+"key_value" "key_value"
+WHERE ("name" = :db_condition_placeholder_0) AND ("collection" = :db_condition_placeholder_1); Array
+(
+    [:db_condition_placeholder_0] => system.cron_last
+    [:db_condition_placeholder_1] => state
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php on line 136 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Connection.php(797): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Select.php(525): Drupal\Core\Database\Connection->query()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Merge.php(378): Drupal\Core\Database\Query\Select->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(136): Drupal\Core\Database\Query\Merge->execute()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(149): Drupal\Core\KeyValueStore\DatabaseStorage->doSet()
+#5 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/State/State.php(84): Drupal\Core\KeyValueStore\DatabaseStorage->set()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(162): Drupal\Core\State\State->set()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(141): Drupal\Core\Cron->setCronLastTime()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/ProxyClass/Cron.php(75): Drupal\Core\Cron->run()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\Core\ProxyClass\Cron->run()
+#10 [internal function]: Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/EventDispatcher/ContainerAwareEventDispatcher.php(111): call_user_func()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-kernel/HttpKernel.php(97): Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher->dispatch()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#14 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(670): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#15 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#16 {main}
+[12-Jun-2023 08:46:34 Asia/Karachi] PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php:95
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php(95): PDOStatement->execute()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(59): Drupal\Core\Database\StatementWrapper->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#4 [internal function]: _drupal_shutdown_function()
+#5 {main}
+
+Next Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: DELETE FROM "semaphore" 
+WHERE "value" = :db_condition_placeholder_0; Array
+(
+    [:db_condition_placeholder_0] => 68290300648694db32aff0.87714998
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/ExceptionHandler.php:46
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(63): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#3 [internal function]: _drupal_shutdown_function()
+#4 {main}
+[12-Jun-2023 11:28:41 Asia/Karachi] Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT 1 AS "expression"
+FROM
+"key_value" "key_value"
+WHERE ("name" = :db_condition_placeholder_0) AND ("collection" = :db_condition_placeholder_1); Array
+(
+    [:db_condition_placeholder_0] => system.cron_last
+    [:db_condition_placeholder_1] => state
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php on line 136 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Connection.php(797): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Select.php(525): Drupal\Core\Database\Connection->query()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Merge.php(378): Drupal\Core\Database\Query\Select->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(136): Drupal\Core\Database\Query\Merge->execute()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(149): Drupal\Core\KeyValueStore\DatabaseStorage->doSet()
+#5 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/State/State.php(84): Drupal\Core\KeyValueStore\DatabaseStorage->set()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(162): Drupal\Core\State\State->set()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(141): Drupal\Core\Cron->setCronLastTime()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/ProxyClass/Cron.php(75): Drupal\Core\Cron->run()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\Core\ProxyClass\Cron->run()
+#10 [internal function]: Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/EventDispatcher/ContainerAwareEventDispatcher.php(111): call_user_func()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-kernel/HttpKernel.php(97): Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher->dispatch()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#14 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(670): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#15 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#16 {main}
+[12-Jun-2023 11:28:41 Asia/Karachi] PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php:95
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php(95): PDOStatement->execute()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(59): Drupal\Core\Database\StatementWrapper->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#4 [internal function]: _drupal_shutdown_function()
+#5 {main}
+
+Next Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: DELETE FROM "semaphore" 
+WHERE "value" = :db_condition_placeholder_0; Array
+(
+    [:db_condition_placeholder_0] => 7317138886486bada2c8b48.76382350
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/ExceptionHandler.php:46
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(63): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#3 [internal function]: _drupal_shutdown_function()
+#4 {main}
+[12-Jun-2023 11:54:03 Asia/Karachi] Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT 1 AS "expression"
+FROM
+"key_value" "key_value"
+WHERE ("name" = :db_condition_placeholder_0) AND ("collection" = :db_condition_placeholder_1); Array
+(
+    [:db_condition_placeholder_0] => system.cron_last
+    [:db_condition_placeholder_1] => state
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php on line 136 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Connection.php(797): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Select.php(525): Drupal\Core\Database\Connection->query()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Merge.php(378): Drupal\Core\Database\Query\Select->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(136): Drupal\Core\Database\Query\Merge->execute()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(149): Drupal\Core\KeyValueStore\DatabaseStorage->doSet()
+#5 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/State/State.php(84): Drupal\Core\KeyValueStore\DatabaseStorage->set()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(162): Drupal\Core\State\State->set()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(141): Drupal\Core\Cron->setCronLastTime()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/ProxyClass/Cron.php(75): Drupal\Core\Cron->run()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\Core\ProxyClass\Cron->run()
+#10 [internal function]: Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/EventDispatcher/ContainerAwareEventDispatcher.php(111): call_user_func()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-kernel/HttpKernel.php(97): Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher->dispatch()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#14 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(670): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#15 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#16 {main}
+[12-Jun-2023 11:54:03 Asia/Karachi] PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php:95
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php(95): PDOStatement->execute()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(59): Drupal\Core\Database\StatementWrapper->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#4 [internal function]: _drupal_shutdown_function()
+#5 {main}
+
+Next Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: DELETE FROM "semaphore" 
+WHERE "value" = :db_condition_placeholder_0; Array
+(
+    [:db_condition_placeholder_0] => 18730499186486c0cc58c6e2.06507705
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/ExceptionHandler.php:46
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(63): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#3 [internal function]: _drupal_shutdown_function()
+#4 {main}
+[12-Jun-2023 12:11:40 Asia/Karachi] Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT 1 AS "expression"
+FROM
+"key_value" "key_value"
+WHERE ("name" = :db_condition_placeholder_0) AND ("collection" = :db_condition_placeholder_1); Array
+(
+    [:db_condition_placeholder_0] => system.cron_last
+    [:db_condition_placeholder_1] => state
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php on line 136 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Connection.php(797): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Select.php(525): Drupal\Core\Database\Connection->query()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Merge.php(378): Drupal\Core\Database\Query\Select->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(136): Drupal\Core\Database\Query\Merge->execute()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(149): Drupal\Core\KeyValueStore\DatabaseStorage->doSet()
+#5 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/State/State.php(84): Drupal\Core\KeyValueStore\DatabaseStorage->set()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(162): Drupal\Core\State\State->set()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(141): Drupal\Core\Cron->setCronLastTime()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/ProxyClass/Cron.php(75): Drupal\Core\Cron->run()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\Core\ProxyClass\Cron->run()
+#10 [internal function]: Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/EventDispatcher/ContainerAwareEventDispatcher.php(111): call_user_func()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-kernel/HttpKernel.php(97): Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher->dispatch()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#14 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(670): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#15 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#16 {main}
+[12-Jun-2023 12:11:40 Asia/Karachi] PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php:95
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php(95): PDOStatement->execute()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(59): Drupal\Core\Database\StatementWrapper->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#4 [internal function]: _drupal_shutdown_function()
+#5 {main}
+
+Next Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: DELETE FROM "semaphore" 
+WHERE "value" = :db_condition_placeholder_0; Array
+(
+    [:db_condition_placeholder_0] => 9218307776486c4ece0b1a5.73133707
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/ExceptionHandler.php:46
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(63): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#3 [internal function]: _drupal_shutdown_function()
+#4 {main}
+[12-Jun-2023 13:01:12 Asia/Karachi] Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT 1 AS "expression"
+FROM
+"key_value" "key_value"
+WHERE ("name" = :db_condition_placeholder_0) AND ("collection" = :db_condition_placeholder_1); Array
+(
+    [:db_condition_placeholder_0] => system.cron_last
+    [:db_condition_placeholder_1] => state
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php on line 136 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Connection.php(797): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Select.php(525): Drupal\Core\Database\Connection->query()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Merge.php(378): Drupal\Core\Database\Query\Select->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(136): Drupal\Core\Database\Query\Merge->execute()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(149): Drupal\Core\KeyValueStore\DatabaseStorage->doSet()
+#5 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/State/State.php(84): Drupal\Core\KeyValueStore\DatabaseStorage->set()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(162): Drupal\Core\State\State->set()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(141): Drupal\Core\Cron->setCronLastTime()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/ProxyClass/Cron.php(75): Drupal\Core\Cron->run()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\Core\ProxyClass\Cron->run()
+#10 [internal function]: Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/EventDispatcher/ContainerAwareEventDispatcher.php(111): call_user_func()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-kernel/HttpKernel.php(97): Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher->dispatch()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#14 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(670): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#15 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#16 {main}
+[12-Jun-2023 13:01:12 Asia/Karachi] PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php:95
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php(95): PDOStatement->execute()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(59): Drupal\Core\Database\StatementWrapper->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#4 [internal function]: _drupal_shutdown_function()
+#5 {main}
+
+Next Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: DELETE FROM "semaphore" 
+WHERE "value" = :db_condition_placeholder_0; Array
+(
+    [:db_condition_placeholder_0] => 15549706966486d0896ebb56.81837991
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/ExceptionHandler.php:46
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(63): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#3 [internal function]: _drupal_shutdown_function()
+#4 {main}
+[12-Jun-2023 13:24:59 Asia/Karachi] Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT 1 AS "expression"
+FROM
+"key_value" "key_value"
+WHERE ("name" = :db_condition_placeholder_0) AND ("collection" = :db_condition_placeholder_1); Array
+(
+    [:db_condition_placeholder_0] => system.cron_last
+    [:db_condition_placeholder_1] => state
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php on line 136 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Connection.php(797): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Select.php(525): Drupal\Core\Database\Connection->query()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Merge.php(378): Drupal\Core\Database\Query\Select->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(136): Drupal\Core\Database\Query\Merge->execute()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(149): Drupal\Core\KeyValueStore\DatabaseStorage->doSet()
+#5 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/State/State.php(84): Drupal\Core\KeyValueStore\DatabaseStorage->set()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(162): Drupal\Core\State\State->set()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(141): Drupal\Core\Cron->setCronLastTime()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/ProxyClass/Cron.php(75): Drupal\Core\Cron->run()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\Core\ProxyClass\Cron->run()
+#10 [internal function]: Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/EventDispatcher/ContainerAwareEventDispatcher.php(111): call_user_func()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-kernel/HttpKernel.php(97): Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher->dispatch()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#14 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(670): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#15 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#16 {main}
+[12-Jun-2023 13:24:59 Asia/Karachi] PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php:95
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php(95): PDOStatement->execute()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(59): Drupal\Core\Database\StatementWrapper->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#4 [internal function]: _drupal_shutdown_function()
+#5 {main}
+
+Next Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: DELETE FROM "semaphore" 
+WHERE "value" = :db_condition_placeholder_0; Array
+(
+    [:db_condition_placeholder_0] => 9921950456486d61be51354.09296324
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/ExceptionHandler.php:46
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(63): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#3 [internal function]: _drupal_shutdown_function()
+#4 {main}
+[12-Jun-2023 14:34:17 Asia/Karachi] Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT 1 AS "expression"
+FROM
+"key_value" "key_value"
+WHERE ("name" = :db_condition_placeholder_0) AND ("collection" = :db_condition_placeholder_1); Array
+(
+    [:db_condition_placeholder_0] => system.cron_last
+    [:db_condition_placeholder_1] => state
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php on line 136 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Connection.php(797): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Select.php(525): Drupal\Core\Database\Connection->query()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Merge.php(378): Drupal\Core\Database\Query\Select->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(136): Drupal\Core\Database\Query\Merge->execute()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(149): Drupal\Core\KeyValueStore\DatabaseStorage->doSet()
+#5 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/State/State.php(84): Drupal\Core\KeyValueStore\DatabaseStorage->set()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(162): Drupal\Core\State\State->set()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(141): Drupal\Core\Cron->setCronLastTime()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/ProxyClass/Cron.php(75): Drupal\Core\Cron->run()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\Core\ProxyClass\Cron->run()
+#10 [internal function]: Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/EventDispatcher/ContainerAwareEventDispatcher.php(111): call_user_func()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-kernel/HttpKernel.php(97): Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher->dispatch()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#14 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(670): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#15 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#16 {main}
+[12-Jun-2023 14:34:17 Asia/Karachi] PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php:95
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php(95): PDOStatement->execute()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(59): Drupal\Core\Database\StatementWrapper->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#4 [internal function]: _drupal_shutdown_function()
+#5 {main}
+
+Next Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: DELETE FROM "semaphore" 
+WHERE "value" = :db_condition_placeholder_0; Array
+(
+    [:db_condition_placeholder_0] => 20464793136486e65a084396.12906567
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/ExceptionHandler.php:46
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(63): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#3 [internal function]: _drupal_shutdown_function()
+#4 {main}
+[12-Jun-2023 15:29:22 Asia/Karachi] Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT 1 AS "expression"
+FROM
+"key_value" "key_value"
+WHERE ("name" = :db_condition_placeholder_0) AND ("collection" = :db_condition_placeholder_1); Array
+(
+    [:db_condition_placeholder_0] => system.cron_last
+    [:db_condition_placeholder_1] => state
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php on line 136 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Connection.php(797): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Select.php(525): Drupal\Core\Database\Connection->query()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Merge.php(378): Drupal\Core\Database\Query\Select->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(136): Drupal\Core\Database\Query\Merge->execute()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(149): Drupal\Core\KeyValueStore\DatabaseStorage->doSet()
+#5 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/State/State.php(84): Drupal\Core\KeyValueStore\DatabaseStorage->set()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(162): Drupal\Core\State\State->set()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(141): Drupal\Core\Cron->setCronLastTime()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/ProxyClass/Cron.php(75): Drupal\Core\Cron->run()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\Core\ProxyClass\Cron->run()
+#10 [internal function]: Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/EventDispatcher/ContainerAwareEventDispatcher.php(111): call_user_func()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-kernel/HttpKernel.php(97): Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher->dispatch()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#14 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(670): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#15 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#16 {main}
+[12-Jun-2023 15:29:22 Asia/Karachi] PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php:95
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php(95): PDOStatement->execute()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(59): Drupal\Core\Database\StatementWrapper->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#4 [internal function]: _drupal_shutdown_function()
+#5 {main}
+
+Next Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: DELETE FROM "semaphore" 
+WHERE "value" = :db_condition_placeholder_0; Array
+(
+    [:db_condition_placeholder_0] => 16837986896486f343809ca1.15064515
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/ExceptionHandler.php:46
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(63): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#3 [internal function]: _drupal_shutdown_function()
+#4 {main}
+[12-Jun-2023 16:07:43 Asia/Karachi] Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: SELECT 1 AS "expression"
+FROM
+"key_value" "key_value"
+WHERE ("name" = :db_condition_placeholder_0) AND ("collection" = :db_condition_placeholder_1); Array
+(
+    [:db_condition_placeholder_0] => system.cron_last
+    [:db_condition_placeholder_1] => state
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php on line 136 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Connection.php(797): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Select.php(525): Drupal\Core\Database\Connection->query()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Merge.php(378): Drupal\Core\Database\Query\Select->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(136): Drupal\Core\Database\Query\Merge->execute()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/KeyValueStore/DatabaseStorage.php(149): Drupal\Core\KeyValueStore\DatabaseStorage->doSet()
+#5 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/State/State.php(84): Drupal\Core\KeyValueStore\DatabaseStorage->set()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(162): Drupal\Core\State\State->set()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Cron.php(141): Drupal\Core\Cron->setCronLastTime()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/ProxyClass/Cron.php(75): Drupal\Core\Cron->run()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/automated_cron/src/EventSubscriber/AutomatedCron.php(65): Drupal\Core\ProxyClass\Cron->run()
+#10 [internal function]: Drupal\automated_cron\EventSubscriber\AutomatedCron->onTerminate()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/EventDispatcher/ContainerAwareEventDispatcher.php(111): call_user_func()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/vendor/symfony/http-kernel/HttpKernel.php(97): Drupal\Component\EventDispatcher\ContainerAwareEventDispatcher->dispatch()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/StackMiddleware/StackedHttpKernel.php(63): Symfony\Component\HttpKernel\HttpKernel->terminate()
+#14 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(670): Drupal\Core\StackMiddleware\StackedHttpKernel->terminate()
+#15 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(22): Drupal\Core\DrupalKernel->terminate()
+#16 {main}
+[12-Jun-2023 16:07:43 Asia/Karachi] PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php:95
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/StatementWrapper.php(95): PDOStatement->execute()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(59): Drupal\Core\Database\StatementWrapper->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#3 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#4 [internal function]: _drupal_shutdown_function()
+#5 {main}
+
+Next Drupal\Core\Database\DatabaseExceptionWrapper: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: DELETE FROM "semaphore" 
+WHERE "value" = :db_condition_placeholder_0; Array
+(
+    [:db_condition_placeholder_0] => 14939776536486fc4043be14.98912383
+)
+ in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/ExceptionHandler.php:46
+Stack trace:
+#0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Query/Delete.php(63): Drupal\mysql\Driver\Database\mysql\ExceptionHandler->handleExecutionException()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Lock/DatabaseLockBackend.php(170): Drupal\Core\Database\Query\Delete->execute()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/includes/bootstrap.inc(527): Drupal\Core\Lock\DatabaseLockBackend->releaseAll()
+#3 [internal function]: _drupal_shutdown_function()
+#4 {main}
+[29-Jun-2023 23:36:47 UTC] PDOException: SQLSTATE[42000] [1203] User notesandpapers already has more than 'max_user_connections' active connections in /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php on line 79 #0 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php(165): PDO->__construct()
+#1 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Database.php(445): Drupal\mysql\Driver\Database\mysql\Connection::open()
+#2 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/Database/Database.php(188): Drupal\Core\Database\Database::openConnection()
+#3 [internal function]: Drupal\Core\Database\Database::getConnection()
+#4 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(79): call_user_func_array()
+#5 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#6 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(212): Drupal\Component\DependencyInjection\Container->get()
+#7 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(62): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters()
+#8 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#9 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(539): Drupal\Component\DependencyInjection\Container->get()
+#10 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(910): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#11 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(482): Drupal\Core\DrupalKernel->initializeContainer()
+#12 /home/rm520fzqbykb/public_html/notesandpapers.com/web/core/lib/Drupal/Core/DrupalKernel.php(684): Drupal\Core\DrupalKernel->boot()
+#13 /home/rm520fzqbykb/public_html/notesandpapers.com/web/index.php(19): Drupal\Core\DrupalKernel->handle()
+#14 {main}
